@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,7 +7,7 @@ body {
   color: #333;
 }
 
-/* Header */
+
 header {
   background-color: #161d2c;
   padding: 10px 20px;
@@ -17,19 +17,12 @@ header {
   align-items: center;
 }
 
+
 .logo {
   font-size: 20px;
   font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
 
-.logo i {
-  font-size: 22px;
-}
-
-/* Navigation Icons */
 .nav-icons {
   list-style: none;
   display: flex;
@@ -38,24 +31,18 @@ header {
   padding: 0;
 }
 
+
 .nav-icons li {
+  cursor: pointer;
   position: relative;
 }
 
-.nav-icons a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-}
 
-/* Profile Picture */
 .profile-pic {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  width: 50px;
 }
 
-/* Notification Badge */
+
 .badge {
   background: red;
   color: white;
@@ -67,7 +54,7 @@ header {
   right: -10px;
 }
 
-/* Layout */
+
 main {
   display: flex;
   max-width: 1200px;
@@ -76,28 +63,11 @@ main {
   gap: 20px;
 }
 
-/* Sidebar */
+
 .sidebar {
   width: 25%;
 }
 
-.friend-card {
-  display: flex;
-  align-items: center; 
-  gap: 10px;
-}
-
-.friend-card img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.friend-card p {
-  margin: 0;
-  font-weight: bold;
-}
 
 .profile-card {
   text-align: center;
@@ -123,7 +93,7 @@ main {
   cursor: pointer;
 }
 
-/* Interests */
+
 .interests {
   background: white;
   padding: 15px;
@@ -140,7 +110,7 @@ main {
   font-size: 14px;
 }
 
-/* Main Content */
+
 .content {
   width: 50%;
 }
@@ -190,7 +160,7 @@ main {
   border-radius: 5px;
 }
 
-/* Right Sidebar */
+
 .right-sidebar {
   width: 25%;
 }
@@ -202,14 +172,23 @@ main {
   border-radius: 5px;
 }
 
+.friend-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  main {
-    flex-direction: column;
-  }
+.friend-card img {
+  width: 40px;
+  border-radius: 50%;
+}
 
-  .sidebar, .content, .right-sidebar {
-    width: 100%;
-  }
+.friend-card button {
+  background: #3b5998;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
 }
