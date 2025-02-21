@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #5b5b5b;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #161d2c;
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo i {
+  font-size: 22px;
+}
+
+/* Navigation Icons */
+.nav-icons {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-icons li {
+  position: relative;
+}
+
+.nav-icons a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Notification Badge */
+.badge {
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 6px;
+  font-size: 12px;
+  position: absolute;
+  top: -5px;
+  right: -10px;
+}
+
+/* Layout */
+main {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  gap: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 25%;
+}
+
+.friend-card {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+}
+
+.friend-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.friend-card p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.profile-card {
+  text-align: center;
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  background: #3b5998;
+  color: white;
+  padding: 10px;
+  margin: 5px 0;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Interests */
+.interests {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.interests span {
+  display: inline-block;
+  background: #ccc;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Main Content */
+.content {
+  width: 50%;
+}
+
+.post {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.post-header img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.post-images {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.post-images img {
+  width: 48%;
+  border-radius: 5px;
+}
+
+.post-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.post-actions button {
+  background: #3b5998;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Right Sidebar */
+.right-sidebar {
+  width: 25%;
+}
+
+.widget, .friend-request, .ads {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .sidebar, .content, .right-sidebar {
+    width: 100%;
+  }
+}
